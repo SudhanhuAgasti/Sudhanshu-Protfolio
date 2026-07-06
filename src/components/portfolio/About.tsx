@@ -5,7 +5,7 @@ const timeline = [
   {
     year: "2019 — 2021",
     title: "Higher Secondary Education",
-    desc: "CHSE odisha at Gopalpur Higher Secondary School,Gopalpur,Balasore. Secured with 74% percentage ",
+    desc: "CHSE Odisha at Gopalpur Higher Secondary School,Gopalpur,Balasore. Secured with 74% percentage ",
     icon: GraduationCap,
   },
   {

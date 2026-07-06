@@ -61,6 +61,17 @@ const skills: Skill[] = [
     level: 90,
     accent: "var(--neon-pink)",
   },
+  {
+    title: "Exploring",
+    icon: Users,
+    items: [
+      "Aws",
+      "Docker",
+      "CICD"
+    ],
+    level: 86,
+    accent: "var(--neon-pink)",
+  },
 ];
 
 function TiltCard({ children, className = "" }: { children: ReactNode; className?: string }) {

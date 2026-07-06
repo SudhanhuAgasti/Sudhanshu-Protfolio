@@ -24,6 +24,12 @@ const education = [
     period: "2021 — 2024",
     desc: "Percentage: 80.25%. Developed analytical thinking, documentation skills, and logical reasoning.",
   },
+  {
+    degree: "Higher Secondary Education",
+    org: "CHSE odisha at Gopalpur Higher Secondary School,Gopalpur,Balasore.",
+    period: "2019 — 2021",
+    desc: "Percentage: 74%.scinece stream in pcmb",
+  }
 ];
 
 function TimelineList({

@@ -27,7 +27,8 @@ const stack = [
   { Icon: VscCode, name: "VS Code", c: "#0EA5E9" },
   { Icon: SiPostman, name: "Postman", c: "#FF6C37" },
   { Icon: SiFramer, name: "Framer Motion", c: "#ffffff" },
-  { Icon: SiSpringboot, name: "Springboot", c: "#00ED64" },
+  { Icon: SiTypescript, name: "Framer Motion", c: "#0EA5E9" },
+
 ];
 
 export function TechMarquee() {
