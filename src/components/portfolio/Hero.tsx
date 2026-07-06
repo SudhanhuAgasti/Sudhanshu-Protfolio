@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, Download, Mail } from "lucide-react";
-import { SiHtml5, SiCss, SiJavascript, SiJira, SiPython } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs, SiExpress } from "react-icons/si";
 import { MagneticButton } from "./MagneticButton";
 import heroOrb from "@/assets/hero-orb.jpg";
 
@@ -14,9 +13,9 @@ const floatingIcons = [
   { Icon: SiHtml5, color: "#E34F26", x: "8%", y: "18%", d: 0 },
   { Icon: SiCss, color: "#1572B6", x: "88%", y: "22%", d: 0.6 },
   { Icon: SiJavascript, color: "#F7DF1E", x: "12%", y: "78%", d: 1.2 },
-  { Icon: SiJira, color: "#0052CC", x: "84%", y: "72%", d: 0.9 },
-  { Icon: FaJava, color: "#007396", x: "6%", y: "48%", d: 0.3 },
-  { Icon: SiPython, color: "#3776AB", x: "92%", y: "48%", d: 1.5 },
+  { Icon: SiReact, color: "#61DAFB", x: "84%", y: "72%", d: 0.9 },
+  { Icon: SiNodedotjs, color: "#339933", x: "6%", y: "48%", d: 0.3 },
+  { Icon: SiExpress, color: "#FFFFFF", x: "92%", y: "48%", d: 1.5 },
 ];
 
 export function Hero() {

@@ -3,6 +3,12 @@ import { Code2, Rocket, School, BookOpen, Users, GraduationCap } from "lucide-re
 
 const timeline = [
   {
+    year: "2019 — 2021",
+    title: "Higher Secondary Education",
+    desc: "CHSE odisha at Gopalpur Higher Secondary School,Gopalpur,Balasore. Secured with 74% percentage ",
+    icon: GraduationCap,
+  },
+  {
     year: "2021 — 2024",
     title: "Bachelor of Science (Graduation +3)",
     desc: "B.Sc. at Gopalpur Degree College, Gopalpur, Balasore. Graduated with 80.25%.",
