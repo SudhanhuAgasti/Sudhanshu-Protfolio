@@ -46,7 +46,7 @@ export function Navbar() {
                 <img
                   src={logoImg}
                   alt="S Agasti Logo"
-                  className="h-12 w-12 rounded-full object-cover border-2 border-white glow-white"
+                  className="h-9 w-9 md:h-12 md:w-12 rounded-full object-cover border-2 border-white glow-white"
                 />
               </div>
             </a>
