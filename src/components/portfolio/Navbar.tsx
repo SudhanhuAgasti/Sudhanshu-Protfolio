@@ -2,6 +2,8 @@ import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+import logoImg from "@/assets/logo.jpg";
+
 const links = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -41,51 +43,11 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               <div className="relative flex items-center justify-center">
-                <svg
-                  className="h-6 w-8 sm:h-7 sm:w-10"
-                  viewBox="0 0 38 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <linearGradient id="logo-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="var(--neon-violet)" />
-                      <stop offset="100%" stopColor="var(--neon-cyan)" />
-                    </linearGradient>
-                    <linearGradient id="logo-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="var(--neon-cyan)" />
-                      <stop offset="100%" stopColor="var(--neon-pink)" />
-                    </linearGradient>
-                  </defs>
-                  {/* First S */}
-                  <path
-                    d="M16 8C16 8 13.5 5.5 10 7.5C6.5 9.5 9 13.5 13 14.5C17 15.5 19.5 19 16 21C12.5 23 10 21 10 21"
-                    stroke="url(#logo-grad-1)"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  {/* Second S */}
-                  <path
-                    d="M26 9.5C26 9.5 23.5 7 20 9C16.5 11 19 15 23 16C27 17 29.5 20.5 26 22.5C22.5 24.5 20 22.5 20 22.5"
-                    stroke="url(#logo-grad-2)"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  {/* Green checkmark integrated at the tail */}
-                  <path
-                    d="M17 19L20 22L26 16"
-                    stroke="oklch(0.72 0.19 140)"
-                    strokeWidth="3.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: "drop-shadow(0 0 4px oklch(0.72 0.19 140))" }}
-                  />
-                </svg>
-                <span className="font-display text-sm font-extrabold tracking-tight text-white sm:text-base ml-0.5">
-                  Das
-                </span>
+                <img
+                  src={logoImg}
+                  alt="S Agasti Logo"
+                  className="h-12 w-12 rounded-full object-cover border-2 border-white glow-white"
+                />
               </div>
             </a>
 
@@ -107,7 +69,7 @@ export function Navbar() {
               href="#contact"
               className="hidden md:block ml-1 rounded-full bg-white/95 px-4 py-1.5 text-sm font-medium text-black transition-transform hover:scale-105"
             >
-              Let's Talk
+              Let's Talk !!
             </a>
 
             {/* Mobile Menu Toggle Button */}
@@ -151,7 +113,7 @@ export function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="mt-2 rounded-xl bg-white text-center py-3 text-sm font-bold text-black transition-transform active:scale-95 shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)]"
                 >
-                  Let's Talk
+                  Let's Talk !!
                 </motion.a>
               </motion.div>
             )}

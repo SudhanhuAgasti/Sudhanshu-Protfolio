@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
-import swadeshiLogistics from "@/assets/swadeshi_logistics.png";
-import disasterRelief from "@/assets/disaster_relief.png";
+import studentManagement from "@/assets/student_management.png";
+import bankingLedger from "@/assets/banking_ledger.png";
+import ecommerceClone from "@/assets/ecommerce_clone.png";
+import portfolioWebsite from "@/assets/portfolio_website.png";
 
 const projects = [
   {
@@ -10,9 +12,9 @@ const projects = [
     desc: "Developed a full-stack student system featuring an AI-powered face recognition attendance system via OpenAI, automated notifications via Node-Cron, and role-based access control.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "jsPDF"],
     grad: "from-[#7C3AED] via-[#3B82F6] to-[#06B6D4]",
-    img: swadeshiLogistics,
-    live: "https://github.com/sudhanshuagasti588",
-    code: "https://github.com/sudhanshuagasti588",
+    img: studentManagement,
+    live: "https://student-management-system-ivory-pi.vercel.app/",
+    code: "https://github.com/SudhanhuAgasti/student-management-system",
   },
   {
     name: "Banking Ledger and Transaction System",
@@ -20,9 +22,9 @@ const projects = [
     desc: "A production-grade banking backend with double-entry ledger architecture, ACID transactions, and idempotency. Uses MongoDB sessions and rollback mechanisms for fault-tolerant transfers.",
     tech: ["Node.js", "Express.js", "MongoDB", "JWT", "ACID", "REST APIs"],
     grad: "from-[#EC4899] via-[#8B5CF6] to-[#6366F1]",
-    img: disasterRelief,
-    live: "https://github.com/sudhanshuagasti588",
-    code: "https://github.com/sudhanshuagasti588",
+    img: bankingLedger,
+    live: "https://github.com/SudhanhuAgasti/BANKING-SYSTEM",
+    code: "https://github.com/SudhanhuAgasti/BANKING-SYSTEM",
   },
   {
     name: "Ecommerce Clone",
@@ -30,19 +32,19 @@ const projects = [
     desc: "A responsive e-commerce web application with product filtering, dynamic search, and optimized user interfaces across multiple device sizes.",
     tech: ["React.js", "HTML5", "CSS3", "JavaScript", "Responsive Design"],
     grad: "from-[#F59E0B] via-[#EF4444] to-[#EC4899]",
-    img: swadeshiLogistics,
-    live: "https://github.com/sudhanshuagasti588",
-    code: "https://github.com/sudhanshuagasti588",
+    img: ecommerceClone,
+    live: "https://github.com/SudhanhuAgasti/luxerious-e-commerce-web",
+    code: "https://github.com/SudhanhuAgasti/luxerious-e-commerce-web",
   },
   {
     name: "Personal Portfolio Website",
     tag: "Portfolio · Design & Animation",
     desc: "Built and deployed a responsive personal portfolio website showcasing modern UI/UX design, interactive GSAP layouts, and sleek Framer Motion transitions.",
-    tech: ["React.js", "GSAP", "Framer Motion", "Tailwind CSS", "Netlify"],
+    tech: ["React.js", "GSAP", "Framer Motion", "Tailwind CSS", "Versal"],
     grad: "from-[#10B981] via-[#3B82F6] to-[#6366F1]",
-    img: disasterRelief,
-    live: "https://github.com/sudhanshuagasti588",
-    code: "https://github.com/sudhanshuagasti588",
+    img: portfolioWebsite,
+    live: "",
+    code: "https://github.com/SudhanhuAgasti/Sudhanshu-Protfolio",
   },
 ];
 

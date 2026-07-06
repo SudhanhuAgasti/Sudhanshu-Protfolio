@@ -35,7 +35,7 @@ export function GithubDashboard() {
             06 — GitHub
           </p>
           <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Consistent <span className="text-gradient">contributions</span> !
+            Consistent <span className="text-gradient">contributions</span>!
           </h2>
         </motion.div>
 
@@ -53,8 +53,8 @@ export function GithubDashboard() {
                   <Github size={18} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">@sudhanshuagasti588</p>
-                  <p className="text-xs text-muted-foreground"> contributions of mine </p>!
+                  <p className="text-sm font-semibold">@github.com/SudhanhuAgasti</p>
+                  <p className="text-xs text-muted-foreground">contributions of mine !</p>
                 </div>
               </div>
               <div className="flex gap-4 text-xs text-muted-foreground">

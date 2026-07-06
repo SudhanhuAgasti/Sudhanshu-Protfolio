@@ -9,8 +9,6 @@ import {
   SiGithub,
   SiPostman,
   SiFramer,
-  SiGreensock,
-  SiSpringboot,
   SiJavascript,
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";

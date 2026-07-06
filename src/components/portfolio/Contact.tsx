@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, type ChangeEvent } from "react";
 import { Send } from "lucide-react";
+import { toast } from "sonner";
 import { MagneticButton } from "./MagneticButton";
 
 function Field({
@@ -41,6 +42,11 @@ function Field({
 }
 
 export function Contact() {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Message sent successfully! I will get back to you soon.");
+  };
+
   return (
     <section id="contact" className="relative py-32 px-6">
       <div
@@ -71,7 +77,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
           className="glass-strong mt-14 grid gap-4 rounded-3xl p-8 sm:p-10"
         >
           <div className="grid gap-4 sm:grid-cols-2">

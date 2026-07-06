@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import type { ComponentType, CSSProperties, MouseEvent, ReactNode } from "react";
+import { useEffect, useState, type ComponentType, CSSProperties, MouseEvent, ReactNode } from "react";
 import { Layout, ShieldCheck, Database, Wrench, Code, Users } from "lucide-react";
 
 type Skill = {
@@ -65,12 +65,17 @@ const skills: Skill[] = [
     title: "Exploring",
     icon: Users,
     items: [
-      "Aws",
-      "Docker",
-      "CICD"
+      "AWS (ECR, ECS)",
+      "Docker & Containerization",
+      "CI/CD Pipelines (GitHub Actions)",
+      "Vercel & Netlify Deployment",
+      "Nginx Web Server",
+      "Serverless Architectures",
+      "Performance Monitoring & Scaling",
     ],
     level: 86,
     accent: "var(--neon-pink)",
+    span: "sm:col-span-2 lg:col-span-3",
   },
 ];
 
@@ -79,19 +84,31 @@ function TiltCard({ children, className = "" }: { children: ReactNode; className
   const y = useMotionValue(0);
   const rX = useSpring(useTransform(y, [-50, 50], [8, -8]), { stiffness: 200, damping: 20 });
   const rY = useSpring(useTransform(x, [-50, 50], [-8, 8]), { stiffness: 200, damping: 20 });
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    setIsTouch(
+      window.matchMedia("(max-width: 768px)").matches ||
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0
+    );
+  }, []);
+
   const onMove = (e: MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     const r = e.currentTarget.getBoundingClientRect();
     x.set(e.clientX - r.left - r.width / 2);
     y.set(e.clientY - r.top - r.height / 2);
   };
+
   return (
     <motion.div
-      onMouseMove={onMove}
+      onMouseMove={isTouch ? undefined : onMove}
       onMouseLeave={() => {
         x.set(0);
         y.set(0);
       }}
-      style={{ rotateX: rX, rotateY: rY, transformStyle: "preserve-3d" }}
+      style={isTouch ? {} : { rotateX: rX, rotateY: rY, transformStyle: "preserve-3d" }}
       className={className}
     >
       {children}
@@ -165,7 +182,7 @@ export function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ type: "spring", stiffness: 100, damping: 15, delay: i * 0.1 }}
-                className="w-full"
+                className={s.span || "w-full"}
               >
                 <TiltCard className="group relative h-full">
                   <div

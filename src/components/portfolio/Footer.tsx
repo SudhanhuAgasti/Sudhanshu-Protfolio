@@ -2,11 +2,16 @@ import { motion } from "framer-motion";
 import { ArrowUp, Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const socials = [
-  { Icon: Github, href: "https://github.com/sudhanshuagasti588", label: "GitHub" },
+  { Icon: Github, href: "https://github.com/SudhanhuAgasti", label: "GitHub" },
   {
     Icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/sudhanshu-agasti?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     label: "LinkedIn",
+  },
+  {
+    Icon: Instagram,
+    href: "https://www.instagram.com/smilllish?igsh=N3B2cWtobmZwOXRp",
+    label: "Instagram",
   },
   { Icon: Mail, href: "mailto:sudhanshuagasti588@gmail.com", label: "Email" },
 ];
