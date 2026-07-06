@@ -43,7 +43,7 @@ const projects = [
     tech: ["React.js", "GSAP", "Framer Motion", "Tailwind CSS", "Versal"],
     grad: "from-[#10B981] via-[#3B82F6] to-[#6366F1]",
     img: portfolioWebsite,
-    live: "",
+    live: "https://sudhanshu-protfolio.vercel.app/",
     code: "https://github.com/SudhanhuAgasti/Sudhanshu-Protfolio",
   },
 ];
